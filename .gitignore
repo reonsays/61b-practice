@@ -1,77 +1,73 @@
-# =====================
-# Java 编译输出文件
-# =====================
-# 忽略所有 .class 字节码文件
-*.class
 
-# 忽略默认的编译输出目录（根据项目不同，可能是 out 或 bin）
-out/
-bin/
+### IntelliJ IDEA ###
+**/out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-# =====================
-# IntelliJ IDEA 配置文件
-# =====================
-# IntelliJ 项目配置文件夹
-.idea/
+### Eclipse ###
+**/.apt_generated
+**/.classpath
+**/.factorypath
+**/.project
+**/.settings
+**/.springBeans
+**/.sts4-cache
+**/bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# IntelliJ 模块文件
-*.iml
-*.iws
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-# IntelliJ 编译输出（如果也叫 out）
-out/
+### VS Code ###
+**/.vscode/
+**/.history/
 
-# =====================
-# Eclipse IDE 配置文件
-# =====================
-.project
-.classpath
-.settings/
-
-# =====================
-# 操作系统产生的隐藏文件
-# =====================
-# macOS 文件系统产生的系统文件
+### Mac OS ###
 .DS_Store
 
-# Windows 缩略图缓存文件
-Thumbs.db
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/**/usage.statistics.xml
+**/.idea/**/dictionaries
+**/.idea/**/shelf
 
-# =====================
-# 日志文件
-# =====================
-*.log
+# AWS User-specific
+**/.idea/**/aws.xml
 
-# =====================
-# 临时文件和编辑器产生的备份文件
-# =====================
-# Vim 临时交换文件
-*.swp
+# Generated files
+**/.idea/**/contentModel.xml
 
-# Emacs 备份文件
-*~
+# Sensitive or high-churn files
+**/.idea/**/dataSources/
+**/.idea/**/dataSources.ids
+**/.idea/**/dataSources.local.xml
+**/.idea/**/sqlDataSources.xml
+**/.idea/**/dynamic.xml
+**/.idea/**/uiDesigner.xml
+**/.idea/**/dbnavigator.xml
 
-# 通用临时文件
-*.tmp
+# Gradle
+**/.idea/**/gradle.xml
+**/.idea/**/libraries
 
-# =====================
-# Gradle 构建目录（如果使用 Gradle）
-# =====================
-.gradle/
-build/
+# Project 2
+proj2*/**/data/
+proj2*/**/ngordnetData2022/
+proj2*/**/*.zip
+proj2*/**/*.txt
+synsets.txt
+hyponyms.txt
+all_words.csv
+total_counts.csv
+top_14377_words.csv
+top_49887_words.csv
+words_that_start_with_q.csv
+hyponyms1000-subgraph.txt
+synsets1000-subgraph.txt
 
-# =====================
-# Maven 构建目录（如果使用 Maven）
-# =====================
-target/
 
-# =====================
-# 其他可能的临时文件
-# =====================
-# npm 依赖包（如果涉及 Node.js）
-node_modules/
-
-# =====================
-# 备注
-# =====================
-# 如果你使用其他 IDE 或工具，根据实际情况补充对应的忽略规则。
